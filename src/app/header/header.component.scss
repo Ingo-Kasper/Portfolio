@@ -1,0 +1,57 @@
+nav {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    > div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #E15544;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 1vw 0 1vw;
+}
+
+a:hover {
+    color: #02F4BF;
+}
+
+.dividing-Line {
+    color: #E15544;
+    font-size: 32px;
+}
+
+.ms-Icon {
+    width: 100px;
+    height: 100px;
+}
+
+.burger-Menu {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav {
+        > div {
+            margin: 0;
+            > a {
+                display: none;
+            }
+        }
+    }
+
+    .dividing-Line {
+        display: none;
+    }
+
+    .burger-Menu {
+        display: block;
+        width: 46px;
+        height: 46px;
+    }
+}
