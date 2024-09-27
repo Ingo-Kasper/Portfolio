@@ -2,6 +2,16 @@
     margin: 0;
 }
 
+.d-none {
+    display: none;
+}
+
+.d-flex-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 /* roboto-mono-100 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
