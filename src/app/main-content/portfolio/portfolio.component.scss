@@ -1,0 +1,12 @@
+section {
+    margin: auto;
+    max-width: 1980px;
+    padding: 0 32px 0 32px;
+    display: flex;
+    > h2 {
+        color: rgba(225, 85, 68, 1);
+        font-size: 54px;
+        font-weight: 500;
+        font-family: 'Roboto Mono', sans-serif;
+    }
+}
