@@ -1,6 +1,7 @@
 section {
     margin: auto;
     max-width: 1980px;
+    height: 90vh;
     display: flex;
     justify-content: space-between;
     > div {
@@ -49,14 +50,14 @@ section {
     }
 }
 
-@media (max-width: 1170px){
+@media (max-width: 1185px){
     section {
-        margin-top: 0;
         > div {
             margin: 80px 0 0 0;
         }
         > .i-am {
-            width: 300px;
+            width: 400px;
+            object-fit: cover;
         }
     }
 }
@@ -86,6 +87,24 @@ section {
             > .button-and-Arrow {
                 display: none;
             }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    section {
+        > div {
+            > .headline-I-am {
+                > h1 {
+                    font-size: 32px;
+                }
+                > h2 {
+                    font-size: 18px;
+                }
+            }
+        }
+        .i-am {
+            width: 260px;
         }
     }
 }

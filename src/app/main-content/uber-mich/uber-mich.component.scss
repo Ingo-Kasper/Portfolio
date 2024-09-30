@@ -24,7 +24,6 @@ section {
         }
         > .graphic-representation {
             width: 100%;
-
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -54,9 +53,9 @@ section {
             }
             > .graphic-representation-mitte {
                 display: flex;
+                justify-content: flex-end;
                 > .suitcase {
                     margin-left: 22%;
-                    justify-content: flex-end;
                 }
                 > span {
                     color: rgba(2, 244, 191, 1);
@@ -81,7 +80,7 @@ section {
                     }
                 }
             }
-            > button {
+            > .let-talk {
                 background-color: rgba(2, 244, 191, 1);
                 border: none;
                 color: rgba(11, 4, 45, 1);
@@ -90,16 +89,111 @@ section {
                 font-family: 'Roboto Mono', sans-serif;
                 padding: 15px 30px 15px 30px;
                 place-self: flex-end;
-
+            }
+            > .let-talk:hover {
+                color: rgba(225, 85, 68, 1);
             }
         }
     }
+}
+
+.why-Me {
+    color: rgba(225, 85, 68, 1);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', sans-serif;
+    place-self: center;
+    display: none;
 }
 
 .corved-Arrow {
     margin-left: 34px;
 }
 
-@media (max-width: 830px){
+.respos-Curced-Arrow-1 {
+    display: none;
+    width: 30px;
+}
 
+.respos-Curced-Arrow-2 {
+    display: none;
+    width: 32px;
+    transform: rotate(216deg) scaleX(-1);
+    place-self: end;
+}
+
+@media (max-width: 830px){
+    .curved-Arrow { 
+        display: none;
+    }
+
+    .respos-Curced-Arrow-1 {
+        display: block;
+    }
+
+    .respos-Curced-Arrow-2 {
+        display: block;
+    }
+
+    .why-Me {
+        display: block;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > img {
+            display: none;
+        }
+        > div {
+            align-items: center;
+            > h2 {
+                font-size: 32px;
+            }
+            > span {
+                text-align: center;
+            }
+            > .graphic-representation {
+                > .graphic-representation-top {
+                    justify-content: center;
+                    margin-top: 18px;
+                    > p {
+                        display: none;
+                    }
+                    > .location-Icon {
+                        margin-left: 0;
+                        > span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                > .graphic-representation-mitte {
+                    justify-content: center;
+                    margin-top: 18px;
+                    > .suitcase {
+                        margin-left: 0;
+                    }
+                    > span {
+                        font-size: 16px;
+                    }
+                }
+                > .graphic-representation-bottom {
+                    justify-content: center;
+                    margin-top: 18px;
+                    > div {
+                        width: 200px;
+                        > span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                > .let-talk {
+                    font-size: 16px;
+                    padding: 12px 20px 12px 20px;
+                    place-self: center;
+                }
+            }
+        }
+    }
 }
