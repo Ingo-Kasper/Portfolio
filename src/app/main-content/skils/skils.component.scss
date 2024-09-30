@@ -1,20 +1,11 @@
 section {
     margin: 0 auto;
     max-width: 1980px;
+    padding: 0 32px 0 32px;
     h2 {
         color: rgba(225, 85, 68, 1);
         font-family: 'Roboto Mono', sans-serif;
         font-weight: 500;
         font-size: 54px;
-    }
-    > img {
-        width: 88px;
-        object-fit: cover;
-    }
-    > p {
-        color: rgba(2, 244, 191, 1);
-        font-family: 'Roboto Mono', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
     }
 }

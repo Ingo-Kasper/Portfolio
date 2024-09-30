@@ -1,0 +1,25 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.singel-Skill {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 18px 24px 18px;
+}
+
+.skill-Image {
+    width: 54px;
+    object-fit: cover;
+}
+
+.skill-Titel {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(2, 244, 191, 1);
+    width: 100px;
+    text-align: center;
+}

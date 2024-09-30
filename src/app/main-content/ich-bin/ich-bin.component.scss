@@ -2,6 +2,7 @@ section {
     margin: auto;
     max-width: 1980px;
     height: 90vh;
+    padding: 0 32px 0 32px;
     display: flex;
     justify-content: space-between;
     > div {
@@ -25,11 +26,9 @@ section {
             }
             > img {
                 width: 20px;
-                padding-right: 64px;
             }
         }
         > .headline-I-am {
-            padding: 0 32px 0 32px;
             > h1 {
                 color: #02F4BF;
                 font-family: 'Roboto Mono', sans-serif;
@@ -45,7 +44,6 @@ section {
         }
     }
     > .i-am {
-        width: 540px;
         object-fit: cover;
     }
 }
@@ -57,7 +55,6 @@ section {
         }
         > .i-am {
             width: 400px;
-            object-fit: cover;
         }
     }
 }
