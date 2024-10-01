@@ -1,15 +1,15 @@
 section {
-    margin: auto;
+    margin: 0 auto;
     max-width: 1980px;
-    height: 90vh;
-    padding: 0 32px 24px 32px;
+    height: 88vh;
+    padding: 24px 32px 24px 32px;
     display: flex;
     justify-content: space-between;
     > div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 13vh;
+        margin: 15vh 0 0 0;
         > .button-and-Arrow {
             display: flex;
             justify-content: space-between;
@@ -45,6 +45,9 @@ section {
     }
     > .i-am {
         object-fit: cover;
+        width: 54%;
+        height: 100%;
+        margin: 0;
     }
 }
 
@@ -59,7 +62,7 @@ section {
     }
 }
 
-@media (max-width: 940px){
+@media (max-width: 990px){
     section {
         > div {
             > .headline-I-am {
@@ -73,8 +76,13 @@ section {
         }
     }
 }
+@media (max-height: 800px){
+    section {
+        height: 81vh;
+    }
+}
 
-@media (max-width: 650px){
+@media (max-width: 700px){
     section {
         display: flex;
         flex-direction: column-reverse;
@@ -85,6 +93,18 @@ section {
                 display: none;
             }
         }
+    }
+}
+
+@media (max-height: 520px){
+    section {
+        height: 78vh;
+    }
+}
+
+@media (max-height: 450px){
+    section {
+        height: 74vh;
     }
 }
 

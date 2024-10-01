@@ -5,9 +5,11 @@ section {
         width: 400px;
         height: 100%;
         object-fit: cover;
-        margin-right: 42px;
+        margin-left: 0;
     }
     > div {
+        margin: 0;
+        width: 900px;
         > h2 {
             color: rgba(2, 244, 191, 1);
             font-size: 48px;
@@ -38,6 +40,9 @@ section {
             padding: 14px 30px 14px 30px;
             border: 1px solid #02F4BF;
         }
+        > .gitHub:hover {
+            color: #02F4BF;
+        }
         > .liveTest {
             background-color: rgb(2, 244, 191);
             border: none;
@@ -48,5 +53,124 @@ section {
             padding: 15px 30px 15px 30px;
             margin-left: 24px;
         }
+        > .liveTest:hover {
+            color: #E15544;
+        }
+    }
+}
+
+.button-Respons {
+    display: none;
+}
+
+.gitHub-Respons {
+    color: #E15544;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 14px 30px 14px 30px;
+    border: 1px solid #02F4BF;
+}
+
+.gitHub-Respons:hover {
+    color: #02F4BF;
+}
+
+.liveTest-Respons{
+    background-color: rgb(2, 244, 191);
+    border: none;
+    color: rgb(11, 4, 45);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto Mono", sans-serif;
+    padding: 15px 30px 15px 30px;
+    margin-left: 24px;
+}
+
+.liveTest-Respons:hover {
+    color: #E15544;
+}
+
+@media (max-width: 1450px) {
+    section {
+        > div {
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    section {
+        > div {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    section {
+        > img {
+            margin-right: 24px;
+        }
+        > div {
+            > h2 {
+                font-size: 36px;
+            }
+            > span {
+                font-size: 16px;
+            }
+            > p {
+                font-size: 16px;
+            }
+            > .gitHub {
+                font-size: 16px;
+                padding: 12px 24px 12px 24px;
+            }
+            > .liveTest {
+                font-size: 16px;
+                padding: 12px 24px 12px 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 835px) {
+    section {
+        flex-direction: column-reverse;
+            align-items: center;
+        > img {
+            margin: 24px 0 24px 0;
+        }
+        > div {
+            > .gitHub {
+                display: none;
+            }
+            > .liveTest {
+                display: none;
+            }
+        }
+    }
+
+    .button-Respons {
+        display: flex;
+    }
+}
+
+@media (max-width: 550px) {
+    section {
+        > img {
+           width: 250px; 
+        }
+    }
+
+    .gitHub-Respons{
+        padding: 12px 18px 12px 18px;
+        font-size: 16px;
+    }
+
+    .liveTest-Respons {
+        font-size: 16px;
+        padding: 12px 18px 12px 18px;
     }
 }

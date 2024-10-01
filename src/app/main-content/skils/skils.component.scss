@@ -9,3 +9,11 @@ section {
         font-size: 54px;
     }
 }
+
+@media (max-width: 450px) {
+    section {
+        > h2 {
+            font-size: 32px;
+        }
+    }
+}

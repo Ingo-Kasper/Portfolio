@@ -7,19 +7,49 @@ section {
 .singel-Skill {
     display: flex;
     flex-direction: column;
-    margin: 24px 18px 24px 18px;
+    margin: 24px 0 24px 0;
 }
 
 .skill-Image {
-    width: 54px;
+    width: 80px;
     object-fit: cover;
 }
 
 .skill-Titel {
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 32px;
     color: rgba(2, 244, 191, 1);
-    width: 100px;
+    width: 200px;
     text-align: center;
+}
+
+@media (max-width: 1450px) {
+    .singel-Skill {
+        margin: 24px 0 24px 0;
+    }
+
+    .skill-Image {
+        width: 60px;
+    }
+
+    .skill-Titel {
+        font-size: 24px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .singel-Skill {
+        margin: 24px 0 24px 0;
+    }
+
+    .skill-Image {
+        width: 40px;
+    }
+
+    .skill-Titel {
+        font-size: 16px;
+        width: 100px;
+    }
 }
