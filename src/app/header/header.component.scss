@@ -41,6 +41,14 @@ a:hover {
     display: none;
 }
 
+.header-split-left {
+    margin-left: 32px;
+}
+
+.header-split-right {
+    margin-right: 32px;
+}
+
 @media (max-width: 700px) {
     nav {
         > div {

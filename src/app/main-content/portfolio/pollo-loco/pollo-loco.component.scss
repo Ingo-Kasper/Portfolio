@@ -105,6 +105,30 @@ section {
     color: #E15544;
 }
 
+@media (max-width: 1450px) {
+    section {
+        > div {
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    section {
+        > div {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    section {
+        > img {
+            margin-left: 24px;
+        }
+    }
+}
+
 @media (max-width: 835px) {
     section {
         flex-direction: column;
