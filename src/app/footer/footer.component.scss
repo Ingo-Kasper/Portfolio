@@ -48,11 +48,15 @@ nav {
     nav {
         > div {
             > .responsive600px {
-                display: block
+                display: block;
+                > img {
+                    margin: 0 12px 0 12px;
+                }
             }
             flex-direction: column;
             > img {
                 padding: 16px 0 16px 0;
+                margin: 0;
             }
             > h2 {
                 margin-bottom: 16px;
@@ -62,4 +66,5 @@ nav {
             }
         }
     }
+
 }

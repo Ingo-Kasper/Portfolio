@@ -45,12 +45,14 @@ p {
 input {
     border: 2px solid rgba(2, 244, 191, 1);
     background-color: transparent;
+    color: rgba(2, 244, 191, 1);
     font-size: 18px;
     font-weight: 400;
     font-family: 'Roboto Mono', sans-serif;
     width: 550px;
     height: 56px;
     margin: 0 0 24px 0;
+    padding: 0 12px 0 12px;
 }
 
 .contact-right {
@@ -70,12 +72,135 @@ span {
     align-items: center;
 }
 
+.contact-icon {
+    margin-right: 12px;
+}
+
 textarea {
     border: 2px solid rgba(2, 244, 191, 1);
     background-color: transparent;
+    color: rgba(2, 244, 191, 1);
     font-size: 18px;
     font-weight: 400;
     font-family: 'Roboto Mono', sans-serif;
     width: 550px;
-    height: 141px;
+    height: 117px;
+    padding: 11px;
+}
+
+.check-Marker {
+    margin-left: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 2px solid rgba(2, 244, 191, 1);
+    margin: 0 8px 0 0;
+    background-color: transparent;
+}
+
+.checkbox-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+label {
+    color: rgb(2, 244, 191);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto Mono", sans-serif;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    color: rgba(130, 123, 123, 1);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto Mono", sans-serif;
+    background-color: transparent;
+    border: 1px solid rgba(130, 123, 123, 1);
+    width: 100px;
+    height: 50px;
+    margin-right: 0;
+}
+
+.link {
+    margin: 0 8px 0 8px;
+    width: 123px;
+}
+
+@media (max-width: 1250px) {
+    input {
+        margin: 0 0 13px 0;
+        width: 400px;
+    }
+
+    textarea {
+        width: 400px;
+    }
+
+    p {
+        width: 400px;
+        margin: 0 0 8px 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .contact-div {
+        flex-direction: column;
+    }
+    .span-contact {
+        display: none;
+    }
+    p {
+        width: 420px;
+        align-items: center;
+        margin: 0 0 16px 0;
+    }
+    .contact-left {
+        align-items: center;
+        margin: 8px 0 8px 0;
+    }
+    .contact-right {
+        margin: 8px 0 8px 0;
+    }
+    .arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .head-Contact {
+        font-size: 36px;
+    }
+    textarea {
+        width: 300px;
+    }
+    input {
+        width: 300px;
+    }
+    p {
+        width: 300px;
+    }
+    .checkbox-div {
+        flex-direction: column;
+    }
+    button {
+        margin: 12px 0 12px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    textarea {
+        width: 200px;
+    }
+    input {
+        width: 200px;
+    }
+    p {
+        width: 200px;
+    }
 }
