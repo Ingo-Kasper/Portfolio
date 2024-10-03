@@ -22,10 +22,12 @@ nav {
         }
         > .link-Button {
             margin-right: 0;
-            > img {
-                width: 30px;
-                height: 30px;
-                padding: 0 12px 0 12px;
+            > a {
+                > img {
+                    width: 30px;
+                    height: 30px;
+                    padding: 0 12px 0 12px;
+                }
             }
         }
     }
@@ -49,8 +51,10 @@ nav {
         > div {
             > .responsive600px {
                 display: block;
-                > img {
-                    margin: 0 12px 0 12px;
+                > a {
+                    > img {
+                        margin: 0 12px 0 12px;
+                    }
                 }
             }
             flex-direction: column;

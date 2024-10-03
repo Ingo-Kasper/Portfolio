@@ -31,18 +31,6 @@ section {
             font-family: 'Roboto Mono', sans-serif;
             margin: 24px 0 24px 0;
         }
-        > .gitHub {
-            color: #E15544;
-            font-family: "Roboto Mono", sans-serif;
-            font-size: 18px;
-            font-weight: 500;
-            background-color: transparent;
-            padding: 14px 30px 14px 30px;
-            border: 1px solid #02F4BF;
-        }
-        > .gitHub:hover {
-            color: #02F4BF;
-        }
         > .liveTest {
             background-color: rgb(2, 244, 191);
             border: none;
@@ -55,6 +43,20 @@ section {
         }
         > .liveTest:hover {
             color: #E15544;
+        }
+        a {
+            > .gitHub {
+                color: #E15544;
+                font-family: "Roboto Mono", sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                background-color: transparent;
+                padding: 14px 30px 14px 30px;
+                border: 1px solid #02F4BF;
+            }
+            > .gitHub:hover {
+                color: #02F4BF;
+            }
         }
     }
 }
