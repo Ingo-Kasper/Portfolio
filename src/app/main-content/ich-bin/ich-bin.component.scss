@@ -13,19 +13,23 @@ section {
         > .button-and-Arrow {
             display: flex;
             justify-content: space-between;
-            > button {
-                color: #E15544;
-                font-family: 'Roboto Mono', sans-serif;
-                font-size: 18px;
-                font-weight: 500;
-                background-color: transparent;
-                padding: 16px 32px 16px 32px;
-                border: 1px solid #02F4BF;
-                transform: rotate(-90deg);
-                padding-left: -12px;
-            }
+            margin: 0;
             > img {
                 width: 20px;
+                margin: 0;
+            }
+            > a {
+                margin: 0;
+                > button {
+                    color: #E15544;
+                    font-family: 'Roboto Mono', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    background-color: transparent;
+                    padding: 16px 32px 16px 32px;
+                    border: 1px solid #02F4BF;
+                    transform: rotate(-90deg);
+                }
             }
         }
         > .headline-I-am {
