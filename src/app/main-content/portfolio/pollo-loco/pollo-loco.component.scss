@@ -169,6 +169,11 @@ section {
 
 @media (max-width: 550px) {
     section {
+        > div {
+            > p {
+                width: 280px;
+            }
+        }
         > img {
             width: 250px; 
         }

@@ -1,7 +1,7 @@
 section {
     margin: 0 auto;
     max-width: 1980px;
-    height: 87vh;
+    height: calc(100vh - 123px);
     padding: 24px 32px 24px 32px;
     display: flex;
     justify-content: space-between;
@@ -49,9 +49,16 @@ section {
     }
     > .i-am {
         object-fit: cover;
-        width: 54%;
         height: 100%;
         margin: 0;
+    }
+}
+
+@media (max-width: 1500px) {
+    section {
+        > .i-am {
+            width: 500px;
+        }
     }
 }
 
@@ -61,7 +68,9 @@ section {
             margin: 80px 0 0 0;
         }
         > .i-am {
-            width: 400px;
+            width: 300px;
+            height: 500px;
+            align-self: end;
         }
     }
 }
@@ -96,6 +105,9 @@ section {
             > .button-and-Arrow {
                 display: none;
             }
+        }
+        > .i-am {
+            align-self: auto;
         }
     }
 }

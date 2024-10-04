@@ -145,8 +145,13 @@ section {
             margin: 24px 0 24px 0;
         }
         > div {
-            > .gitHub {
-                display: none;
+            > h2 {
+                text-align-last: center;
+            }
+            > a {
+                > .gitHub {
+                    display: none;
+                }
             }
             > .liveTest {
                 display: none;
@@ -161,6 +166,9 @@ section {
 
 @media (max-width: 550px) {
     section {
+        > div {
+            width: 280px;
+        }
         > img {
            width: 250px; 
         }
