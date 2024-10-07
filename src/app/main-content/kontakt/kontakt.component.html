@@ -1,4 +1,4 @@
-<section id="kontakt">
+<form id="kontakt" (ngSubmit)="onSubmit(contactFor)" #contactFor="ngForm">
     <div class="headliner-div">
         <h2 class="head-Contact">Contact me</h2>
         <img class="arrow" src="assets/icon/arrow.svg" alt="Arrow">
@@ -6,19 +6,22 @@
     <div class="contact-div">
         <div class="contact-left">
             <p>Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together</p>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Email">
+            <input [(ngModel)]="contactData.name" type="text" name="name" id="your-Name" placeholder="Your Name" required>
+            <input [(ngModel)]="contactData.email" type="email" name="email" id="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
         </div>
         <div class="contact-right">
             <span class="span-contact"><img class="contact-icon" src="assets/icon/icon_email.svg" alt="E-Mail icon">E-Mail: Ingo-Kasper&#64;protonmail.com</span>
             <span class="span-contact"><img class="contact-icon" src="assets/icon/icon_phone.svg" alt="Phone Icon">Tel: 0162 666 82 75</span>
-            <textarea name="Your Massage" id="" placeholder="Your Massage"></textarea>
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="Your Massage" required></textarea>
+            @if (!message.valid && message.touched && !message.disabled) {
+                <span>Please enter a Massage</span>
+            }
         </div>
     </div>
     <div class="checkbox-div">
         <label><input class="check-Marker" type="checkbox">
             <p>I've read the <a class="link" href="">Privacy policy</a> component Web and agree to the processing of my data as outlined.</p>
         </label>
-        <button>Send</button>
+        <button type="submit">Send</button>
     </div>
-</section>
+</form>
