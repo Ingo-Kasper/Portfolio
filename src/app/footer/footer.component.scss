@@ -34,12 +34,14 @@ nav {
     > .unter-Footer {
         display: flex;
         justify-content: center;
-        > p {
+        > a {
             margin: 8px 32px 12px 0;
             font-size: 16px;
             font-family: 'Roboto Mono', sans-serif;
+            color: #E15544;
+            text-decoration: none;
         }
-        > p:hover {
+        > a:hover {
             color: rgb(2, 244, 191);
             transition-duration: 0.2s;
         }
