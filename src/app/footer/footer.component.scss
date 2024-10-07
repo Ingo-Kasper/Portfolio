@@ -39,6 +39,10 @@ nav {
             font-size: 16px;
             font-family: 'Roboto Mono', sans-serif;
         }
+        > p:hover {
+            color: rgb(2, 244, 191);
+            transition-duration: 0.2s;
+        }
     }
 }
 

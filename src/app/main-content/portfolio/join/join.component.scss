@@ -43,6 +43,7 @@ section {
         }
         > .liveTest:hover {
             color: #E15544;
+            transition-duration: 0.2s;
         }
         a {
             > .gitHub {
@@ -56,6 +57,7 @@ section {
             }
             > .gitHub:hover {
                 color: #02F4BF;
+                transition-duration: 0.2s;
             }
         }
     }

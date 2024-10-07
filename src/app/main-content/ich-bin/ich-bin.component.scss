@@ -30,6 +30,10 @@ section {
                     border: 1px solid #02F4BF;
                     transform: rotate(-90deg);
                 }
+                >button:hover {
+                    color: #02F4BF;
+                    transition-duration: 0.2s;
+                }
             }
         }
         > .headline-I-am {
