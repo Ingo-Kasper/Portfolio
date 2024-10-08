@@ -7,7 +7,13 @@
         <div class="contact-left">
             <p class="p-contact">Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together</p>
             <input [(ngModel)]="contactData.name" type="text" name="name" id="your-Name" placeholder="Your Name" required>
+            @if (!message.valid && message.touched && !message.disabled) {
+                <span>Please enter a Name</span>
+            }
             <input [(ngModel)]="contactData.email" type="email" name="email" id="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            @if (!message.valid && message.touched && !message.disabled) {
+                <span>Please enter a Mail</span>
+            }
         </div>
         <div class="contact-right">
             <span class="span-contact"><img class="contact-icon" src="assets/icon/icon_email.svg" alt="E-Mail icon">E-Mail: Ingo-Kasper&#64;protonmail.com</span>
