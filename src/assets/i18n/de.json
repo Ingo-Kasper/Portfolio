@@ -2,5 +2,16 @@
     "header-link-I-am": "Ich bin",
     "header-link-skill": "Skll",
     "header-link-portfolio": "Portfolio",
-    "header-link-contact": "Kontakt"
+    "header-link-contact": "Kontakt",
+    "i-me-link-Button": "KONTAKTIEREN MICH",
+    "i-am-link-Headline": "FRONTEND ENTWICKLER",
+    "why-me-link-Headline": "Warum ich?",
+    "why-me-link-Text": "Durch meine Erfahrung durch die Developer Akademie kann ich komplexe Designs in klare, funktionale Interfaces umsetzen, die das Nutzererlebnis verbessern.",
+    "why-me-link-I-am": "Ich bin",
+    "why-me-link-local": "Wohne in",
+    "why-me-link-local2": "Ibbenbüren",
+    "why-me-link-Remote": "offen für",
+    "why-me-link-Remote2": "work remote",
+    "why-me-link-relocate": "offen für",
+    "why-me-link-relocate2": "Umzug"
 }
