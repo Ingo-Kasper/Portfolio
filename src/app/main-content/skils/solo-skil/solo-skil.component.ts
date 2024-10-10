@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { TranslationService } from '../../../services/translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-solo-skil',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './solo-skil.component.html',
   styleUrl: './solo-skil.component.scss'
 })
 export class SoloSkilComponent {
+
+  translate = inject(TranslationService)
 
   skill: {
     image: string,

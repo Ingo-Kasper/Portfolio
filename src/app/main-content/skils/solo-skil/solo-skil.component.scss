@@ -1,12 +1,12 @@
 section {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .singel-Skill {
     display: flex;
     flex-direction: column;
+    height: 170px;
     margin: 24px 0 24px 0;
 }
 
@@ -24,9 +24,25 @@ section {
     text-align: center;
 }
 
+.challenge-me {
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    > .skill-Titel-Challenge {
+        font-family: 'Roboto Mono', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: rgba(2, 244, 191, 1);
+        width: 300px;
+        text-align: center;
+        margin: 12px;
+    }
+}
+
 @media (max-width: 1450px) {
     .singel-Skill {
         margin: 24px 0 24px 0;
+        height: 125px;
     }
 
     .skill-Image {
@@ -37,11 +53,18 @@ section {
         font-size: 24px;
         width: 150px;
     }
+
+    .challenge-me {
+        > .skill-Titel-Challenge {
+            font-size: 24px;
+            width: 200px;
+        }
+    }
 }
 
 @media (max-width: 1000px) {
     .singel-Skill {
-        margin: 24px 0 24px 0;
+        height: 80px;
     }
 
     .skill-Image {
@@ -52,4 +75,12 @@ section {
         font-size: 16px;
         width: 100px;
     }
+
+    .challenge-me {
+        > .skill-Titel-Challenge {
+            font-size: 16px;
+            width: 100px;
+        }
+    }
+
 }
