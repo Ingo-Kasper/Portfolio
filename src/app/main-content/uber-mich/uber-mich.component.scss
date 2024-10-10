@@ -10,43 +10,25 @@ section {
         margin: 24px 0 24px 0;
     }
     > div {
-        margin: 24px 0 24px 24px;
-        > h2 {
-            color: rgba(225, 85, 68, 1);
-            font-size: 54px;
-            font-weight: 500;
-        }
+        margin: 24px 0 24px 24px auto;
         > span {
-            color: rgb(2, 244, 191);
-            font-size: 16px;
-            font-weight: 400;
-            font-family: "Roboto Mono", sans-serif;
-            margin: 24px 0 24px 0;
             text-align: end;
         }
         > .graphic-representation {
             width: 100%;
+            max-width: 500px;
+            margin: 0;
             > .graphic-representation-top {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 margin: 12px 0 12px 0;
-                > p {
-                    color: rgba(225, 85, 68, 1);
-                    font-size: 48px;
-                    font-weight: 700;
-                    font-family: 'Roboto Mono', sans-serif;
-                }
                 > .location-Icon {
                     display: flex;
                     justify-content: flex-start;
                     width: 200px;
                     margin-left: 17%;
                     > span {
-                        color: rgba(2, 244, 191, 1);
-                        font-size: 18px;
-                        font-family: 'Roboto Mono', sans-serif;
-                        font-weight: 400;
                         margin-left: 12px
                     }
                 }
@@ -59,10 +41,6 @@ section {
                     margin-left: 22%;
                 }
                 > span {
-                    color: rgba(2, 244, 191, 1);
-                    font-size: 18px;
-                    font-family: 'Roboto Mono', sans-serif;
-                    font-weight: 400;
                     margin-left: 12px;
                 }
             }
@@ -74,10 +52,6 @@ section {
                     display: flex;
                     width: 350px;
                     > span {
-                        color: rgba(2, 244, 191, 1);
-                        font-size: 18px;
-                        font-family: 'Roboto Mono', sans-serif;
-                        font-weight: 400;
                         margin-left: 12px;
                     }
                 }
@@ -106,6 +80,26 @@ section {
             }
         }
     }
+}
+
+h2 {
+    color: rgba(225, 85, 68, 1);
+    font-size: 54px;
+    font-weight: 500;
+}
+
+span {
+    color: rgb(2, 244, 191);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+p {
+    color: rgba(225, 85, 68, 1);
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 .why-Me {
@@ -140,10 +134,13 @@ section {
 
     .respos-Curced-Arrow-1 {
         display: block;
+        margin: 30px 0 0 0;
     }
 
     .respos-Curced-Arrow-2 {
         display: block;
+        margin: 0;
+        height: 70px;
     }
 
     .why-Me {
@@ -166,9 +163,11 @@ section {
                 text-align: center;
             }
             > .graphic-representation {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
                 > .graphic-representation-top {
-                    justify-content: center;
-                    margin-top: 18px;
+                    margin: 18px auto;
                     > p {
                         display: none;
                     }
@@ -180,8 +179,7 @@ section {
                     }
                 }
                 > .graphic-representation-mitte {
-                    justify-content: center;
-                    margin-top: 18px;
+                    margin: 18px auto;
                     > .suitcase {
                         margin-left: 0;
                     }
@@ -190,8 +188,7 @@ section {
                     }
                 }
                 > .graphic-representation-bottom {
-                    justify-content: center;
-                    margin-top: 18px;
+                    margin: 18px auto;
                     > div {
                         width: 200px;
                         > span {
