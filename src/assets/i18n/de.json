@@ -17,5 +17,11 @@
     "why-me-link-Button": "Schreib mir",
     "skill-link-Headline": "Meine Skills",
     "skill-link-Challenge-me": "Fordern Sie mich heraus",
-    "skill-link-Challenge": "Ich freue mich immer, neue Technologien zu lernen. Sagen Sie mir einfach, was Sie brauchen."
+    "skill-link-Challenge": "Ich freue mich immer, neue Technologien zu lernen. Sagen Sie mir einfach, was Sie brauchen.",
+    "join-Project-scripts": "JavaScript | HTML | CSS | Firebase",
+    "join-Project-Description": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu",
+    "polkemon-api-Project-scripts": "JavaScript | HTML | CSS",
+    "pokemon-api-Project-Description": "PokeDex wurde mit der API getestet, um alle Pokemon anzuzeigen",
+    "pollo-Loco-Project-scripts": "JavaScript | HTML | CSS",
+    "pollo-Loco-Project-Description": "Jump Run auf der Grundlage eines Objektorientierten Ansatzes. Helfen Sie Pepe, Münze und Tabasco-Salsa zu finden, um gegen das verrückte Hem zu kämpfen."
 }

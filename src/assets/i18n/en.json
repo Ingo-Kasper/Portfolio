@@ -17,5 +17,11 @@
     "why-me-link-Button": "Let´s talk",
     "skill-link-Headline": "My Skills",
     "skill-link-Challenge-me": " Challenge me",
-    "skill-link-Challenge": "I'm always happy to learn new technologies, just tell me what you need."
+    "skill-link-Challenge": "I'm always happy to learn new technologies, just tell me what you need.",
+    "join-Project-scripts": "JavaScript | HTML | CSS | Firebase",
+    "join-Project-Description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories",
+    "pokemon-api-Project-scripts": "JavaScript | HTML | CSS",
+    "pokemon-api-Project-Description": "PokeDex was tested with the API to view all Pokemon",
+    "pollo-Loco-Project-scripts": "JavaScript | HTML | CSS",
+    "pollo-Loco-Project-Description": "Jump Run game based on object oriented approach. Help Pepe to find coin and tabasco salsa to fight against the crazy hem."
 }
