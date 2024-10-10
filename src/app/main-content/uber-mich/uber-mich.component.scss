@@ -6,93 +6,25 @@ section {
     justify-content: space-between;
     > img {
         object-fit: cover;
-        width: 400px;
-        margin: 24px 0 24px 0;
-    }
-    > div {
-        margin: 24px 0 24px 24px auto;
-        > span {
-            text-align: end;
-        }
-        > .graphic-representation {
-            width: 100%;
-            max-width: 500px;
-            margin: 0;
-            > .graphic-representation-top {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                margin: 12px 0 12px 0;
-                > .location-Icon {
-                    display: flex;
-                    justify-content: flex-start;
-                    width: 200px;
-                    margin-left: 17%;
-                    > span {
-                        margin-left: 12px
-                    }
-                }
-            }
-            > .graphic-representation-mitte {
-                display: flex;
-                justify-content: flex-end;
-                margin: 12px 0 12px 0;
-                > .suitcase {
-                    margin-left: 22%;
-                }
-                > span {
-                    margin-left: 12px;
-                }
-            }
-            > .graphic-representation-bottom {
-                display: flex;
-                justify-content: flex-end;
-                margin: 12px 0 12px 0;
-                > div {
-                    display: flex;
-                    width: 350px;
-                    > span {
-                        margin-left: 12px;
-                    }
-                }
-            }
-            > .button-Posist{
-                > a {
-                    display: flex;
-                    justify-content: flex-end;
-                    text-decoration: none;
-                    > .let-talk {
-                        background-color: rgba(2, 244, 191, 1);
-                        border: none;
-                        color: rgba(11, 4, 45, 1);
-                        font-size: 18px;
-                        font-weight: 500;
-                        font-family: 'Roboto Mono', sans-serif;
-                        padding: 15px 30px 15px 30px;
-                        margin: 12px 0 12px 0;
-                        place-self: flex-end;
-                    }
-                    > .let-talk:hover {
-                        color: rgba(225, 85, 68, 1);
-                        transition-duration: 0.2s;
-                    }
-                }
-            }
-        }
+        margin: 0;
     }
 }
 
 h2 {
-    color: rgba(225, 85, 68, 1);
-    font-size: 54px;
+    color: rgb(225, 85, 68);
+    font-size: 4em;
     font-weight: 500;
+    text-align: end;
+    margin-right: 0;
 }
 
 span {
     color: rgb(2, 244, 191);
-    font-size: 16px;
+    font-size: 1.3rem;
     font-weight: 400;
     font-family: "Roboto Mono", sans-serif;
+    text-align: end;
+    margin-right: 0;
 }
 
 p {
@@ -100,11 +32,17 @@ p {
     font-size: 48px;
     font-weight: 700;
     font-family: 'Roboto Mono', sans-serif;
+    margin: 0;
+}
+
+.main-dev {
+    width: 50vw;
+    margin-right: 0;
 }
 
 .why-Me {
     color: rgba(225, 85, 68, 1);
-    font-size: 18px;
+    font-size: 2em;
     font-weight: 700;
     font-family: 'Roboto Mono', sans-serif;
     place-self: center;
@@ -120,11 +58,147 @@ p {
     width: 30px;
 }
 
+.graphic-representation {
+    width: 100%;
+    max-width: 900px;
+    margin: 0;
+}
+
+.graphic-representation-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 12px 0 12px 0;
+}
+
+.location-div {
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.location-Icon:hover {
+    padding-bottom: 8px;
+    background-image: url(/assets/icon/Ellipse-20.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.graphic-representation-top:hover {
+    > div {
+        > .location-Icon {
+            padding-bottom: 8px;
+            background-image: url(/assets/icon/Ellipse-20.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+    }
+}
+
+.graphic-representation-mitte {
+    display: flex;
+    margin: 12px 0 12px 0;
+    > .curved-Arrow {
+        margin-right: 0;
+    }
+    > .suitcase {
+        height: 50px;
+        width: 32px;
+        margin-right: 18px;
+        margin-left: 25%;
+        background-image: url(../../../assets/icon/group-25.svg);
+        background-repeat: no-repeat;
+    }
+    > span {
+        margin: 0 4vw 0 18px;
+    }
+}
+
+.graphic-representation-mitte:hover {
+    > .suitcase {
+        transform: rotate(5deg);
+    }
+}
+
+.graphic-representation-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 0 12px 0;
+    > div {
+        width: 350px;
+        display: flex;
+        margin-right: 50px;
+    }
+}
+
+.graphic-representation-bottom:hover {
+    > div {
+        > .remote-Icon {
+            height: 55px;
+            width: 63px;
+            background-image: url(../../../assets/icon/icon-Remote2.svg);
+        }
+    }
+}
+
+.remote-Icon {
+    height: 50px;
+    width: 55px;
+    background-image: url(../../../assets/icon/icon-Remote.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.remote-Icon:hover {
+    height: 55px;
+    width: 63px;
+    background-image: url(../../../assets/icon/icon-Remote2.svg);
+}
+
+.curved-Arrow {
+    margin-right: 35%;
+}
+
+.curved-Arrow-3 {
+    margin: 0;
+}
+
 .respos-Curced-Arrow-2 {
     display: none;
     width: 32px;
     transform: rotate(216deg) scaleX(-1);
     place-self: end;
+}
+
+.button-Posist{
+    > a {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        width: 170px;
+        margin-right: 0px;
+        > .let-talk {
+            background-color: rgba(2, 244, 191, 1);
+            border: none;
+            color: rgba(11, 4, 45, 1);
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Roboto Mono', sans-serif;
+            padding: 15px 30px 15px 30px;
+        }
+        > .let-talk:hover {
+            color: rgba(225, 85, 68, 1);
+            transition-duration: 0.2s;
+        }
+    }
+}
+
+@media (max-width: 1050px){
+    section {
+        > img {
+            width: 300px;
+        }
+    }
 }
 
 @media (max-width: 870px){
@@ -145,6 +219,15 @@ p {
 
     .why-Me {
         display: block;
+        text-align: center;
+    }
+
+    .curved-Arrow-4 {
+        display: none;
+    }
+
+    .curved-Arrow-3 {
+        display: none;
     }
 
     section {
@@ -156,8 +239,9 @@ p {
         }
         > div {
             align-items: center;
+            margin: 0;
             > h2 {
-                font-size: 32px;
+                margin: 0;
             }
             > span {
                 text-align: center;

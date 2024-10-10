@@ -10,57 +10,62 @@ section {
         flex-direction: column;
         justify-content: space-between;
         margin: 15vh 0 0 0;
-        > .button-and-Arrow {
-            display: flex;
-            justify-content: space-between;
-            margin: 0;
-            > img {
-                width: 20px;
-                margin: 0;
-            }
-            > a {
-                margin: 0;
-                > button {
-                    color: #E15544;
-                    font-family: 'Roboto Mono', sans-serif;
-                    font-size: 18px;
-                    font-weight: 500;
-                    background-color: transparent;
-                    padding: 16px 32px 16px 32px;
-                    border: 1px solid #02F4BF;
-                    transform: rotate(-90deg);
-                }
-                >button:hover {
-                    color: #02F4BF;
-                    transition-duration: 0.2s;
-                }
-            }
-        }
-        > .headline-I-am {
-            > h1 {
-                color: #02F4BF;
-                font-family: 'Roboto Mono', sans-serif;
-                font-weight: 700;
-                font-size: 82px;
-            }
-            > h2 {
-                color: #02F4BF;
-                font-family: 'Roboto Mono', sans-serif;
-                font-weight: 500;
-                font-size: 52px;
-            }
-        }
     }
-    > .i-am {
-        object-fit: cover;
-        height: 100%;
+}
+
+h1 {
+    color: #02F4BF;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 700;
+    font-size: 7rem;
+}
+
+h2 {
+    color: #02F4BF;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+a {
+    margin: 0;
+    > button {
+        color: #E15544;
+        font-family: 'Roboto Mono', sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        background-color: transparent;
+        padding: 16px 32px 16px 32px;
+        border: 1px solid #02F4BF;
+        transform: rotate(-90deg);
+    }
+    >button:hover {
+        color: #02F4BF;
+        transition-duration: 0.2s;
+    }
+}
+
+.button-and-Arrow {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    > img {
+        width: 20px;
         margin: 0;
     }
+}
+
+.i-am {
+    object-fit: cover;
+    height: calc(100vh - 125px);
+    margin: 0;
 }
 
 .arrow-Down {
     margin: 0;
     color: #E15544;
+    height: 10vh;
+    width: 2vw;
 }
 
 .arrow-Down:hover {
@@ -68,44 +73,39 @@ section {
     transition-duration: 0.2s;
 }
 
-@media (max-width: 1500px) {
-    section {
-        > .i-am {
-            width: 500px;
-        }
+@media (max-width: 1450px){
+    h1 {
+        font-size: 6rem;
+    }
+    h2 {
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 1185px){
-    section {
-        > div {
-            margin: 80px 0 0 0;
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    a {
+        > button {
+            font-size: 1.8rem;
+            padding: 14px 28px 14px 28px;
         }
-        > .i-am {
-            width: 300px;
-            height: 500px;
-            align-self: end;
-        }
+    }
+    .i-am {
+        width: 50%;
     }
 }
 
-@media (max-width: 990px){
-    section {
-        > div {
-            > .headline-I-am {
-                > h1 {
-                    font-size: 40px;
-                }
-                > h2 {
-                    font-size: 24px;
-                }
-            }
+@media (max-height: 850px){
+    a {
+        > button {
+            font-size: 1rem;
+            padding: 14px 28px 14px 28px;
         }
-    }
-}
-@media (max-height: 800px){
-    section {
-        height: 81vh;
     }
 }
 
@@ -126,32 +126,14 @@ section {
     }
 }
 
-@media (max-height: 520px){
-    section {
-        height: 78vh;
+ @media (max-width: 600px){
+    .i-am {
+        width: 260px;
     }
-}
-
-@media (max-height: 450px){
-    section {
-        height: 74vh;
+    h1 {
+        font-size: 3rem;
     }
-}
-
-@media (max-width: 450px){
-    section {
-        > div {
-            > .headline-I-am {
-                > h1 {
-                    font-size: 32px;
-                }
-                > h2 {
-                    font-size: 18px;
-                }
-            }
-        }
-        .i-am {
-            width: 260px;
-        }
+    h2 {
+        font-size: 2rem;
     }
-}
+ }
