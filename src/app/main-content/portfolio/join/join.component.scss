@@ -31,21 +31,7 @@ section {
             font-family: 'Roboto Mono', sans-serif;
             margin: 24px 0 24px 0;
         }
-        > .liveTest {
-            background-color: rgb(2, 244, 191);
-            border: none;
-            color: rgb(11, 4, 45);
-            font-size: 18px;
-            font-weight: 500;
-            font-family: "Roboto Mono", sans-serif;
-            padding: 15px 30px 15px 30px;
-            margin-left: 24px;
-        }
-        > .liveTest:hover {
-            color: #E15544;
-            transition-duration: 0.2s;
-        }
-        a {
+        > a {
             > .gitHub {
                 color: #E15544;
                 font-family: "Roboto Mono", sans-serif;
@@ -54,9 +40,25 @@ section {
                 background-color: transparent;
                 padding: 14px 30px 14px 30px;
                 border: 1px solid #02F4BF;
+                cursor: pointer;
             }
             > .gitHub:hover {
                 color: #02F4BF;
+                transition-duration: 0.2s;
+            }
+            > .liveTest {
+                background-color: rgb(2, 244, 191);
+                border: none;
+                color: rgb(11, 4, 45);
+                font-size: 18px;
+                font-weight: 500;
+                font-family: "Roboto Mono", sans-serif;
+                padding: 15px 30px 15px 30px;
+                margin-left: 24px;
+                cursor: pointer;
+            }
+            > .liveTest:hover {
+                color: #E15544;
                 transition-duration: 0.2s;
             }
         }
@@ -75,6 +77,7 @@ section {
     background-color: transparent;
     padding: 14px 30px 14px 30px;
     border: 1px solid #02F4BF;
+    cursor: pointer;
 }
 
 .gitHub-Respons:hover {
@@ -89,7 +92,7 @@ section {
     font-weight: 500;
     font-family: "Roboto Mono", sans-serif;
     padding: 15px 30px 15px 30px;
-    margin-left: 24px;
+    cursor: pointer;
 }
 
 .liveTest-Respons:hover {
@@ -142,13 +145,11 @@ section {
 @media (max-width: 835px) {
     section {
         flex-direction: column-reverse;
-        align-items: center;
+            align-items: center;
         > img {
             margin: 24px 0 24px 0;
-            width: 250px; 
         }
         > div {
-            width: 280px;
             > h2 {
                 text-align-last: center;
             }
@@ -156,9 +157,9 @@ section {
                 > .gitHub {
                     display: none;
                 }
-            }
-            > .liveTest {
-                display: none;
+                > .liveTest {
+                    display: none;
+                }
             }
         }
     }
@@ -169,6 +170,15 @@ section {
 }
 
 @media (max-width: 550px) {
+    section {
+        > div {
+            width: 280px;
+        }
+        > img {
+           width: 250px; 
+        }
+    }
+
     .gitHub-Respons{
         padding: 12px 18px 12px 18px;
         font-size: 16px;

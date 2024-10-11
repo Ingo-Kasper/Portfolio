@@ -34,20 +34,6 @@ section {
         }
         > .button-div {
             text-align-last: end;
-            > .liveTest {
-                background-color: rgb(2, 244, 191);
-                border: none;
-                color: rgb(11, 4, 45);
-                font-size: 18px;
-                font-weight: 500;
-                font-family: "Roboto Mono", sans-serif;
-                padding: 15px 30px 15px 30px;
-                margin-left: 24px;
-            }
-            > .liveTest:hover {
-                color: #E15544;
-                transition-duration: 0.2s;
-            }
             > a {
                 > .gitHub {
                     color: #E15544;
@@ -62,6 +48,20 @@ section {
                     color: #02F4BF;
                     transition-duration: 0.2s;
                 }
+                > .liveTest {
+                    background-color: rgb(2, 244, 191);
+                    border: none;
+                    color: rgb(11, 4, 45);
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: "Roboto Mono", sans-serif;
+                    padding: 15px 30px 15px 30px;
+                    margin-left: 24px;
+                }
+                > .liveTest:hover {
+                    color: #E15544;
+                    transition-duration: 0.2s;
+                }
             }
         }
     }
@@ -73,8 +73,14 @@ section {
     }
 }
 
+a {
+    text-decoration: none;
+    margin: 0;
+}
+
 .button-Respons {
     display: none;
+    text-decoration: none;
 }
 
 .gitHub-Respons {
@@ -86,6 +92,7 @@ section {
     background-color: transparent;
     padding: 14px 30px 14px 30px;
     border: 1px solid #02F4BF;
+    cursor: pointer;
 }
 
 .gitHub-Respons:hover {
@@ -102,6 +109,7 @@ section {
     font-family: "Roboto Mono", sans-serif;
     padding: 15px 30px 15px 30px;
     margin-left: 24px;
+    cursor: pointer;
 }
 
 .liveTest-Respons:hover {
@@ -140,16 +148,6 @@ section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            > h2 {
-                font-size: 36px;
-            }
-            > span {
-                font-size: 16px;
-            }
-            > p {
-                font-size: 16px;
-                width: 280px;
-            }
             > .button-div {
                 display: none;
             }
@@ -157,32 +155,33 @@ section {
         > img {
             margin: 24px 0 24px 0;
             align-self: center;
-            width: 250px; 
         }
     }
 
     .button-Respons {
-        display: none;
-        align-items: center;
-        flex-direction: row !important;
-    }
-    .button-Respons {
         display: flex;
-    }
-    .gitHub-Respons{
-        padding: 12px 18px 12px 18px;
-        font-size: 16px;
-    }
-    .liveTest-Respons {
-        font-size: 16px;
-        padding: 12px 18px 12px 18px;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row !important;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
     section {
         > div {
-            width: 300px;
+            width: 280px;
+        }
+        img {
+            width: 250px;
+        }
+        .gitHub-Respons{
+            padding: 12px 18px 12px 18px;
+            font-size: 16px;
+        }
+    
+        .liveTest-Respons {
+            font-size: 16px;
+            padding: 12px 18px 12px 18px;
         }
     }
 }
