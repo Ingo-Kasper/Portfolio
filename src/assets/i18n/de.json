@@ -1,11 +1,11 @@
 {
     "header-link-I-am": "Ich bin",
     "header-link-skill": "Skll",
-    "header-link-portfolio": "Portfolio",
+    "header-link-portfolio": "Projekte",
     "header-link-contact": "Kontakt",
-    "i-me-link-Button": "KONTAKTIEREN MICH",
-    "i-am-link-Headline": "FRONTEND ENTWICKLER",
-    "why-me-link-Headline": "Warum ich",
+    "i-me-link-Button": "SCHREIB MIR",
+    "i-am-link-Headline": "FRONTEND DEVELOPER",
+    "why-me-link-Headline": "Über mich",
     "why-me-link-Text": "Durch meine Erfahrung durch die Developer Akademie kann ich komplexe Designs in klare, funktionale Interfaces umsetzen, die das Nutzererlebnis verbessern.",
     "why-me-link-I-am": "Ich bin",
     "why-me-link-local": "Wohne in",
@@ -23,5 +23,14 @@
     "polkemon-api-Project-scripts": "JavaScript | HTML | CSS",
     "pokemon-api-Project-Description": "PokeDex wurde mit der API getestet, um alle Pokemon anzuzeigen",
     "pollo-Loco-Project-scripts": "JavaScript | HTML | CSS",
-    "pollo-Loco-Project-Description": "Jump Run auf der Grundlage eines Objektorientierten Ansatzes. Helfen Sie Pepe, Münze und Tabasco-Salsa zu finden, um gegen das verrückte Hem zu kämpfen."
+    "pollo-Loco-Project-Description": "Jump Run auf der Grundlage eines Objektorientierten Ansatzes. Helfen Sie Pepe, Münze und Tabasco-Salsa zu finden, um gegen das verrückte Hem zu kämpfen.",
+    "kontakt-Headline": "Schreib mir",
+    "kontakt-text": "Sind Sie sich immer noch nicht sicher, ob ich die richtige Person für Ihr Projekt bin? Kontaktieren Sie mich, damit ich Sie beruhigen kann. Lassen Sie uns zusammenarbeiten.",
+    "kontakt-check-Marker": "Ich habe gelesen die ",
+    "kontakt-check-Marker-2": "und stimme der beschriebenen Verarbeitung meiner Daten zu.",
+    "kontakt-Mail": "Deine E-Mail",
+    "kontakt-Name": "Dein Name",
+    "kontakt-Message": "Deine Nachricht",
+    "footer-link-privacy": "Datenschutzerklärung",
+    "footer-link-legal-notice": "Impressum"
 }

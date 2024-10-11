@@ -1,7 +1,7 @@
 {
     "header-link-I-am": "i am",
     "header-link-skill": "Skill",
-    "header-link-portfolio": "Portfolio",
+    "header-link-portfolio": "Projects",
     "header-link-contact": "Contact",
     "i-me-link-Button": "CONTRACT ME",
     "i-am-link-Headline": "FRONTEND DEVELOPER",
@@ -23,5 +23,14 @@
     "pokemon-api-Project-scripts": "JavaScript | HTML | CSS",
     "pokemon-api-Project-Description": "PokeDex was tested with the API to view all Pokemon",
     "pollo-Loco-Project-scripts": "JavaScript | HTML | CSS",
-    "pollo-Loco-Project-Description": "Jump Run game based on object oriented approach. Help Pepe to find coin and tabasco salsa to fight against the crazy hem."
+    "pollo-Loco-Project-Description": "Jump Run game based on object oriented approach. Help Pepe to find coin and tabasco salsa to fight against the crazy hem.",
+    "kontakt-Headline": "Contact me",
+    "kontakt-text": "Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together.",
+    "kontakt-check-Marker": "I've read the ",
+    "kontakt-check-Marker-2": "and agree to the proccsing of my data as outlined.",
+    "kontakt-Mail": "Your E-Mail",
+    "kontakt-Name": "Your Name",
+    "kontakt-Message": "Your Message",
+    "footer-link-privacy": "Privacy Policy",
+    "footer-link-legal-notice": "Legal Notice"
 }
