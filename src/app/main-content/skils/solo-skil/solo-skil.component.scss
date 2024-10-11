@@ -32,11 +32,33 @@ section {
         font-family: 'Roboto Mono', sans-serif;
         font-weight: 700;
         font-size: 32px;
-        color: rgba(2, 244, 191, 1);
+        color: transparent;
         width: 300px;
         text-align: center;
         margin: 12px;
+        animation-name: challengeMe-to-transparent;
+        animation-duration: 0.5s; 
     }
+}
+
+.challenge-me:hover {
+    cursor: pointer;
+    > .skill-Titel-Challenge {
+        display: block;
+        color: rgba(2, 244, 191, 1);
+        animation-name: challengeMe-to-text;
+        animation-duration: 0.025s; 
+    }
+}
+
+@keyframes challengeMe-to-text {
+    from {color: transparent;}
+    to {color: rgba(2, 244, 191, 1);}
+}
+
+@keyframes challengeMe-to-transparent {
+    from {color: rgba(2, 244, 191, 1);}
+    to {color: transparent;}
 }
 
 @media (max-width: 1450px) {
