@@ -53,4 +53,10 @@ export class KontaktComponent {
       ngForm.resetForm();
     }
   }
+
+  isClicked: boolean = false;
+
+  toggleCheckmark(): void {
+    this.isClicked = !this.isClicked;
+  }
 }

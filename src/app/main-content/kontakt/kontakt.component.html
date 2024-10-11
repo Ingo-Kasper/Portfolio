@@ -24,10 +24,13 @@
             }
         </div>
     </div>
+
     <div class="checkbox-div">
-        <label><input class="check-Marker" type="checkbox">
+        <div class="checkbox-div-2">
+            <div class="custom-checkmark" [class.clicked]="isClicked" (click)="toggleCheckmark()"></div>
             <p class="check-Marker-Text">{{'kontakt-check-Marker' | translate}}<a class="link" href="">{{'footer-link-privacy' | translate}}</a> {{'kontakt-check-Marker-2' | translate}}</p>
-        </label>
+        </div>
         <button type="submit">Send</button>
     </div>
+      
 </form>
