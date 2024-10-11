@@ -6,27 +6,27 @@
     <div class="contact-div">
         <div class="contact-left">
             <p class="p-contact">{{'kontakt-text' | translate}}</p>
-            <input [(ngModel)]="contactData.name" type="text" name="name" id="your-Name" placeholder="{{'kontakt-Name' | translate}}" required>
-            @if (!message.valid && message.touched && !message.disabled) {
-                <span>Please enter a Name</span>
+            <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" id="your-Name" placeholder="{{'kontakt-Name' | translate}}" required>
+            @if (!name.valid && name.touched && !name.disabled) {
+                <span class="error-report">Please enter a Name</span>
             }
-            <input [(ngModel)]="contactData.email" type="email" name="email" id="email" placeholder="{{'kontakt-Mail' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-            @if (!message.valid && message.touched && !message.disabled) {
-                <span>Please enter a Mail</span>
+            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" name="email" id="email" placeholder="{{'kontakt-Mail' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            @if (!email.valid && email.touched && !email.disabled) {
+                <span class="error-report">Please enter a Mail</span>
             }
         </div>
         <div class="contact-right">
-            <span class="span-contact"><img class="contact-icon" src="assets/icon/icon_email.svg" alt="E-Mail icon">E-Mail: Ingo-Kasper&#64;protonmail.com</span>
+            <span class="span-contact" href="mailto:Ingo-Kasper@protonmail.com" target="_blank"><img class="contact-icon" src="assets/icon/icon_email.svg" alt="E-Mail icon">E-Mail: Ingo-Kasper&#64;protonmail.com</span>
             <span class="span-contact"><img class="contact-icon" src="assets/icon/icon_phone.svg" alt="Phone Icon">Tel: 0162 666 82 75</span>
             <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="{{'kontakt-Message' | translate}}" required></textarea>
             @if (!message.valid && message.touched && !message.disabled) {
-                <span>Please enter a Massage</span>
+                <span class="error-report">Please enter a Massage</span>
             }
         </div>
     </div>
     <div class="checkbox-div">
         <label><input class="check-Marker" type="checkbox">
-            <p>{{'kontakt-check-Marker' | translate}}<a class="link" href="">{{'footer-link-privacy' | translate}}</a> {{'kontakt-check-Marker-2' | translate}}</p>
+            <p class="check-Marker-Text">{{'kontakt-check-Marker' | translate}}<a class="link" href="">{{'footer-link-privacy' | translate}}</a> {{'kontakt-check-Marker-2' | translate}}</p>
         </label>
         <button type="submit">Send</button>
     </div>

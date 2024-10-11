@@ -41,10 +41,6 @@ p {
     margin: 0 0 24px 0;
 }
 
-.p-contact{
-    margin-right: 12px;
-}
-
 input {
     border: 2px solid rgba(2, 244, 191, 1);
     background-color: transparent;
@@ -89,6 +85,7 @@ textarea {
     width: 550px;
     height: 117px;
     padding: 11px;
+    margin: 0 0 24px 0;
 }
 
 .check-Marker {
@@ -101,9 +98,12 @@ textarea {
     background-color: transparent;
 }
 
+.check-Marker-Text {
+    margin: 0;
+}
+
 .checkbox-div {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-top: 24px;
@@ -117,19 +117,22 @@ label {
     margin: 0 18px 0 0;
     display: flex;
     align-items: center;
-
 }
 
 button {
-    color: rgba(130, 123, 123, 1);
+    color: rgba(225, 85, 68, 1);
     font-size: 18px;
     font-weight: 500;
     font-family: "Roboto Mono", sans-serif;
     background-color: transparent;
-    border: 1px solid rgba(130, 123, 123, 1);
+    border: 1px solid rgb(2, 244, 191);
     width: 100px;
     height: 50px;
     margin-right: 0;
+}
+
+button:hover {
+    color: rgba(2, 244, 191, 1);
 }
 
 .link {
@@ -137,18 +140,21 @@ button {
     color: #E15544;;
 }
 
+.error-report {
+    color: #E15544;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto Mono", sans-serif;
+    margin: 0 0 24px 0;
+}
+
 @media (max-width: 1250px) {
     input {
-        margin: 0 0 13px 0;
         width: 400px;
     }
 
     textarea {
         width: 400px;
-    }
-
-    p {
-        margin: 0 0 8px 0;
     }
 }
 
@@ -169,6 +175,8 @@ button {
     }
     .contact-right {
         margin: 8px 0 8px 0;
+        align-items: center;
+        gap: 12px;
     }
     .arrow {
         display: none;
