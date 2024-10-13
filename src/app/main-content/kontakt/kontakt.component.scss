@@ -110,7 +110,7 @@ label {
     align-items: center;
 }
 
-button {
+.button-abled {
     color: rgba(225, 85, 68, 1);
     font-size: 18px;
     font-weight: 500;
@@ -122,8 +122,20 @@ button {
     margin-right: 0;
 }
 
-button:hover {
+.button-abled:hover {
     color: rgba(2, 244, 191, 1);
+}
+
+.button-disabled {
+    color: rgb(112, 112, 112);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto Mono", sans-serif;
+    background-color: transparent;
+    border: 1px solid rgb(112, 112, 112);
+    width: 100px;
+    height: 50px;
+    margin-right: 0;
 }
 
 .link {
@@ -216,8 +228,11 @@ button:hover {
     .checkbox-div {
         flex-direction: column;
     }
-    button {
-        margin: 24px 0 0 0;
+    .button-abled {
+        margin: 24px 0 12px 0;
+    }
+    .button-disabled {
+        margin: 24px 0 12px 0;
     }
 }
 
@@ -233,9 +248,6 @@ button:hover {
     }
     .checkbox-div {
         flex-direction: column;
-    }
-    button {
-        margin: 12px 0 12px 0;
     }
 }
 
