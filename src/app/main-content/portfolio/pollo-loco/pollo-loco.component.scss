@@ -1,9 +1,7 @@
 section {
     display: flex;
-    justify-content: space-between;
     padding: 24px 0 24px 0;
     > div {
-        margin: 0;
         width: 900px;
         > h2 {
             color: rgba(2, 244, 191, 1);
@@ -76,6 +74,10 @@ section {
 a {
     text-decoration: none;
     margin: 0;
+}
+
+.project-text {
+    margin: 0 24px 0 24px;
 }
 
 .button-Respons {
