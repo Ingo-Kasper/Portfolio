@@ -28,27 +28,24 @@ section {
     margin: 0;
     display: flex;
     flex-wrap: nowrap;
-    > .skill-Titel-Challenge {
-        font-family: 'Roboto Mono', sans-serif;
-        font-weight: 700;
-        font-size: 32px;
-        color: transparent;
-        width: 300px;
-        text-align: center;
-        margin: 12px;
-        animation-name: challengeMe-to-transparent;
-        animation-duration: 0.5s; 
-    }
 }
 
-.challenge-me:hover {
-    cursor: pointer;
-    > .skill-Titel-Challenge {
-        display: block;
-        color: rgba(2, 244, 191, 1);
-        animation-name: challengeMe-to-text;
-        animation-duration: 0.025s; 
-    }
+.skill-Titel-Challenge {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(2, 244, 191, 1);
+    width: 200px;
+    text-align: center;
+    margin: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.singel-Skill:hover + .skill-Titel-Challenge {
+    opacity: 1;
+    visibility: visible;
 }
 
 @keyframes challengeMe-to-text {
