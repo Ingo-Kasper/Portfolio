@@ -57,7 +57,7 @@ a {
 
 .i-am {
     object-fit: cover;
-    height: calc(100vh - 125px);
+    width: 50%;
     margin: 0;
 }
 
@@ -94,9 +94,6 @@ a {
             font-size: 1.8rem;
             padding: 14px 28px 14px 28px;
         }
-    }
-    .i-am {
-        width: 50%;
     }
 }
 

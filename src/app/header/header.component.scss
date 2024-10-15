@@ -1,17 +1,20 @@
+section {
+    background-image: linear-gradient(rgba(11, 4, 45, 1), rgba(11, 4, 45, 1), rgba(11, 4, 45, 0.2));
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 75px;
+}
+
 nav {
     margin: auto;
     max-width: 1980px;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(rgba(11, 4, 45, 1), rgba(11, 4, 45, 1), rgba(11, 4, 45, 0.2));
-    position: sticky;
-    top: 0;
-    z-index: 1;
     height: 75px;
-    > div {
-        display: flex;
-        align-items: center;
-    }
+    align-items: center;
+    padding: 0 32px;
 }
 
 a {
@@ -44,10 +47,14 @@ a:hover {
 
 .header-split-left {
     margin-left: 32px;
+    display: flex;
+    align-items: center;
 }
 
 .header-split-right {
     margin-right: 32px;
+    display: flex;
+    align-items: center;
 }
 
 .translater-Aktive {

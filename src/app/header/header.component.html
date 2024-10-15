@@ -1,16 +1,18 @@
-<nav>
-    <div class="header-split-left">
-        <img class="ms-Icon" src="assets/icon/ms-Logo.svg" alt="MS Logo">
-        <a href="#ich-bin">{{'header-link-I-am' | translate}}</a>
-        <a href="#skils">{{'header-link-skill' | translate}}</a>
-        <a href="#portfolio">{{'header-link-portfolio' | translate}}</a>
-        <a href="#kontakt">{{'header-link-contact' | translate}}</a>
-    </div>
-
-    <div class="header-split-right">
-        <a (click)="translate.switchLanguage('de')">DE</a>
-        <div class="dividing-Line">|</div>
-        <a (click)="translate.switchLanguage('en')">EN</a>
-        <img class="burger-Menu" src="assets/icon/burger-menu.svg" alt="Burger Menu">
-    </div>
-</nav>
+<section>
+    <nav>
+        <div class="header-split-left">
+            <img class="ms-Icon" src="assets/icon/ms-Logo.svg" alt="MS Logo">
+            <a href="#ich-bin">{{'header-link-I-am' | translate}}</a>
+            <a href="#skils">{{'header-link-skill' | translate}}</a>
+            <a href="#portfolio">{{'header-link-portfolio' | translate}}</a>
+            <a href="#kontakt">{{'header-link-contact' | translate}}</a>
+        </div>
+    
+        <div class="header-split-right">
+            <a (click)="translate.switchLanguage('de')">DE</a>
+            <div class="dividing-Line">|</div>
+            <a (click)="translate.switchLanguage('en')">EN</a>
+            <img class="burger-Menu" src="assets/icon/burger-menu.svg" alt="Burger Menu">
+        </div>
+    </nav>
+</section>

@@ -252,10 +252,13 @@ p {
                     > p {
                         display: none;
                     }
-                    > .location-Icon {
-                        margin-left: 0;
+                    > .location-div{
+                        > .location-Icon {
+                            margin-left: 0;
+                        }
                         > span {
                             font-size: 16px;
+                            margin: 0 4vw 0 18px;
                         }
                     }
                 }
@@ -266,14 +269,17 @@ p {
                     }
                     > span {
                         font-size: 16px;
+                        margin: 0 4vw 0 18px;
                     }
                 }
                 > .graphic-representation-bottom {
-                    margin: 18px auto;
+                    margin: auto;
                     > div {
-                        width: 180px;
+                        width: auto;
+                        margin-right: 0;
                         > span {
                             font-size: 16px;
+                            margin: 0 4vw 0 18px;
                         }
                     }
                 }
