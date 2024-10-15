@@ -23,7 +23,6 @@ span {
     font-size: 1.3rem;
     font-weight: 400;
     font-family: "Roboto Mono", sans-serif;
-    text-align: end;
     margin-right: 0;
 }
 
@@ -60,21 +59,20 @@ p {
 
 .graphic-representation {
     width: 100%;
-    max-width: 900px;
+    max-width: 550px;
     margin: 0;
 }
 
 .graphic-representation-top {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     margin: 12px 0 12px 0;
 }
 
 .location-div {
     width: 200px;
     display: flex;
-    align-items: flex-end;
+    margin-left: 24px;
 }
 
 .location-Icon:hover {
@@ -97,7 +95,7 @@ p {
 
 .graphic-representation-mitte {
     display: flex;
-    margin: 12px 0 12px 0;
+    align-items: center;
     > .curved-Arrow {
         margin-right: 0;
     }
@@ -122,7 +120,6 @@ p {
 
 .graphic-representation-bottom {
     display: flex;
-    justify-content: flex-end;
     margin: 12px 0 12px 0;
     > div {
         width: 350px;
