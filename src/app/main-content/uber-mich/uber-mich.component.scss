@@ -242,6 +242,7 @@ p {
             }
             > span {
                 text-align: center;
+                font-size: 1rem;
             }
             > .graphic-representation {
                 display: flex;
@@ -290,5 +291,11 @@ p {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 450px) {
+    h2 {
+        text-align: center;
     }
 }
