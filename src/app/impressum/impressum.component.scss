@@ -1,5 +1,6 @@
 section {
     padding: 42px;
+    max-width: 1980px;
     height: calc(100vh - 84px);
 }
 
@@ -7,15 +8,15 @@ h1 {
     color: rgba(225, 85, 68, 1);
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 700;
-    font-size: 82px;
-    margin-bottom: 24px 0 24px 0;
+    font-size: 5rem;
+    margin: 24px 0 24px 0;
 }
 
 h2 {
     color: rgba(225, 85, 68, 1);
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 500;
-    font-size: 52px;
+    font-size: 3rem;
     margin: 18px 0 18px 0;
 }
 
@@ -31,14 +32,14 @@ p {
     color: #02F4BF;
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 ul {
     color: #02F4BF;
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
     margin: 12px 0 12px 0;
 }
 
@@ -46,7 +47,11 @@ a {
     color: rgb(177, 175, 175);
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 250px;
 }
 
 a:hover {
@@ -58,75 +63,61 @@ a:hover {
     color: rgba(225, 85, 68, 1);
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
-
-@media (max-width: 900px) {
+@media (max-width: 1150px) {
     h1 {
-        font-size: 62px;
+        font-size: 4rem;
     }
+
     h2 {
-        font-size: 42px;
+        font-size: 2.5rem;
     }
+
     h3 {
-        font-size: 22px;
-    }
-    p {
-        font-size: 16px;
-    }
-    ul {
-        font-size: 16px;
-    }
-    a {
-        font-size: 16px;
+        font-size: 2rem;
     }
 }
 
-@media (max-width: 800px)  {
+@media (max-width: 850px) {
     h1 {
-        font-size: 42px;
+        font-size: 3rem;
     }
+
     h2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
+
     h3 {
-        font-size: 22px;
-    }
-    p {
-        font-size: 16px;
-    }
-    ul {
-        font-size: 16px;
-    }
-    a {
-        font-size: 16px;
-    }
-    .main-Content {
-        font-size: 18px;
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     h1 {
-        font-size: 32px;
+        font-size: 2rem;
     }
+
     h2 {
-        font-size: 22px;
+        font-size: 1.5rem;
     }
+
     h3 {
-        font-size: 18px;
+        font-size: 1rem;
     }
-    p {
-        font-size: 16px;
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 1.3rem;
     }
-    ul {
-        font-size: 16px;
+
+    h2 {
+        font-size: 1.15rem;
     }
+
     a {
-        font-size: 16px;
-    }
-    .main-Content {
-        font-size: 18px;
+        width: 200px;
     }
 }
