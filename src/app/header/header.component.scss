@@ -71,26 +71,51 @@ a:hover {
     top: 0;
     right: 0;
     width: 100%;
-    background-color: #0B2D4D;
+    background-image: url(../../assets/background/Background.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: 1;
     max-width: 1980px;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  
+    &.open {
+      display: flex;
+      flex-direction: column;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+    &.closed {
+      transform: translateY(-100%);
+      opacity: 0;
+      display: none;
+    }
+  
     > a {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    > .responsive-translate {
         margin-bottom: 32px;
         text-align: center;
     }
+  
     > svg {
-        width: 42px;
-        height: 42px;
-        margin: 24px 24px 42px auto;
-        color: #E15544;
-        transition-duration: 0.2s;
+      width: 42px;
+      height: 42px;
+      margin: 24px 24px 42px auto;
+      color: #e15544;
+      transition-duration: 0.2s;
     }
-    >svg:hover {
-        cursor: pointer;
-        color: #02F4BF;
-        transition-duration: 0.2s;
+  
+    > svg:hover {
+      cursor: pointer;
+      color: #02f4bf;
+      transition-duration: 0.2s;
     }
-}
+  }
 
 @media (max-width: 750px) {
     nav {
@@ -110,9 +135,5 @@ a:hover {
         display: block;
         width: 46px;
         height: 46px;
-    }
-    .responsive-nav {
-        display: flex;
-        flex-direction: column;
     }
 }
