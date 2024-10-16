@@ -196,7 +196,17 @@ label {
 
   .responsev-contact {
     display: none;
-    
+  }
+
+  .arrow-to-WhyMe {
+    display: none;
+    color: rgb(225, 85, 68);
+    margin-right: 0;
+    rotate: 180deg;
+  }
+  .arrow-to-WhyMe:hover {
+    color: rgb(2, 244, 191);
+    cursor: pointer;
   }
 
 @media (max-width: 1250px) {
@@ -249,7 +259,10 @@ label {
         flex-direction: column;
         align-items: center;
         margin-top: 42px;
-    } 
+    }
+    .arrow-to-WhyMe {
+        display: block;
+    }
 }
 
 @media (max-width: 550px) {
