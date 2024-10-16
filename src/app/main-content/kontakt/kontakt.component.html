@@ -30,15 +30,15 @@
             <div class="custom-checkmark" [class.clicked]="isClicked" (click)="toggleCheckmark()"></div>
             <p class="check-Marker-Text">{{'kontakt-check-Marker' | translate}}<a class="link" href="">{{'footer-link-privacy' | translate}}</a> {{'kontakt-check-Marker-2' | translate}}</p>
         </div>
-        <a class="arrow-to-WhyMe" href="#ich-bin"><svg class="arrow-Down" width="22" height="50" viewBox="0 0 22 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.4142 45.0634L19.3265 38.7604C19.7082 38.4123 20.2923 38.4123 20.6741 38.7604L21.1897 39.2306C21.6246 39.6272 21.6246 40.3118 21.1897 40.7084L11.6738 49.3856C11.292 49.7337 10.708 49.7337 10.3262 49.3856L0.810336 40.7084C0.375396 40.3118 0.375396 39.6272 0.810337 39.2306L1.32595 38.7604C1.7077 38.4123 2.29178 38.4123 2.67354 38.7604L9.58575 45.0634L9.58575 1C9.58575 0.447717 10.0335 0 10.5858 0L11.4142 0C11.9665 0 12.4142 0.447715 12.4142 1L12.4142 45.0634Z" fill="currentColor"/>
-            </svg>
-        </a>
         @if (isClicked && name.valid && name.touched && !name.disabled && email.valid && email.touched && !email.disabled && message.valid && message.touched && !message.disabled) {
             <button class="button-abled" type="submit">Send</button>
         } @else {
             <button class="button-disabled">Send</button>
         }
+        <a class="arrow-to-WhyMe" href="#ich-bin"><svg class="arrow-Down" width="22" height="50" viewBox="0 0 22 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.4142 45.0634L19.3265 38.7604C19.7082 38.4123 20.2923 38.4123 20.6741 38.7604L21.1897 39.2306C21.6246 39.6272 21.6246 40.3118 21.1897 40.7084L11.6738 49.3856C11.292 49.7337 10.708 49.7337 10.3262 49.3856L0.810336 40.7084C0.375396 40.3118 0.375396 39.6272 0.810337 39.2306L1.32595 38.7604C1.7077 38.4123 2.29178 38.4123 2.67354 38.7604L9.58575 45.0634L9.58575 1C9.58575 0.447717 10.0335 0 10.5858 0L11.4142 0C11.9665 0 12.4142 0.447715 12.4142 1L12.4142 45.0634Z" fill="currentColor"/>
+            </svg>
+        </a>
     </div>
 
     <div class="responsev-contact">
