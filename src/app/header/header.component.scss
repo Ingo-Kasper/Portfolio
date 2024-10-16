@@ -65,7 +65,34 @@ a:hover {
     color: #E15544;
 }
 
-@media (max-width: 700px) {
+.responsive-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #0B2D4D;
+    z-index: 1;
+    max-width: 1980px;
+    > a {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    > svg {
+        width: 42px;
+        height: 42px;
+        margin: 24px 24px 42px auto;
+        color: #E15544;
+        transition-duration: 0.2s;
+    }
+    >svg:hover {
+        cursor: pointer;
+        color: #02F4BF;
+        transition-duration: 0.2s;
+    }
+}
+
+@media (max-width: 750px) {
     nav {
         > div {
             margin: 0;
@@ -83,5 +110,9 @@ a:hover {
         display: block;
         width: 46px;
         height: 46px;
+    }
+    .responsive-nav {
+        display: flex;
+        flex-direction: column;
     }
 }

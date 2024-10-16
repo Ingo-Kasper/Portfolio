@@ -52,21 +52,21 @@ nav {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     nav {
         > div {
             > .responsive600px {
                 display: block;
                 > a {
                     > img {
-                        margin: 0 12px 0 12px;
+                        margin: 32px 12px 0 12px;
                     }
                 }
             }
             flex-direction: column;
             > img {
                 padding: 16px 0 16px 0;
-                margin: 0;
+                margin: 42px 0 0 0;
             }
             > h2 {
                 margin-bottom: 16px;
@@ -76,5 +76,7 @@ nav {
             }
         }
     }
-
+    .unter-Footer {
+        margin-top: 42px;
+    }
 }
