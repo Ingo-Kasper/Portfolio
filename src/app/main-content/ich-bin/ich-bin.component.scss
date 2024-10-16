@@ -29,6 +29,7 @@ h2 {
 
 a {
     margin: 0;
+    height: 70px;
     > button {
         color: #E15544;
         font-family: 'Roboto Mono', sans-serif;
@@ -37,12 +38,18 @@ a {
         background-color: transparent;
         padding: 16px 32px 16px 32px;
         border: 1px solid #02F4BF;
-        transform: rotate(-90deg);
+        cursor: pointer;
     }
     >button:hover {
         color: #02F4BF;
         transition-duration: 0.2s;
     }
+}
+
+.button-contact {
+    transform: rotate(-90deg);
+    position: relative;
+    left: -80px;
 }
 
 .button-and-Arrow {
@@ -105,6 +112,10 @@ a {
             font-size: 1rem;
             padding: 14px 28px 14px 28px;
         }
+    }
+    .i-am {
+        object-fit: scale-down;
+        height: 50%;
     }
 }
 
