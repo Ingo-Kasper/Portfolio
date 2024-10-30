@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -12,5 +12,14 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class FooterComponent {
 
   translate = inject(TranslateService);
+  router = inject(Router);
+
+  datenschutzTop() {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd && this.router.url === '/datenschutz') {
+        window.scrollTo(0, 0);
+      }
+    })
+  }
 
 }
