@@ -31,7 +31,7 @@
             <p class="check-Marker-Text">{{'kontakt-check-Marker' | translate}}<a class="link" href="">{{'footer-link-privacy' | translate}}</a> {{'kontakt-check-Marker-2' | translate}}</p>
         </div>
         @if (isClicked && name.valid && name.touched && !name.disabled && email.valid && email.touched && !email.disabled && message.valid && message.touched && !message.disabled) {
-            <button class="button-abled" type="submit">Send</button>
+            <button class="button-abled">Send</button>
         } @else {
             <button class="button-disabled">Send</button>
         }
