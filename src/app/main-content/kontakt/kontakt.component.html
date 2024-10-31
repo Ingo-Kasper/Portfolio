@@ -45,5 +45,9 @@
         <span class="span-contact-2" href="mailto:Ingo-Kasper@protonmail.com" target="_blank"><img class="contact-icon" src="assets/icon/icon_email.svg" alt="E-Mail icon">E-Mail: Ingo-Kasper&#64;protonmail.com</span>
         <span class="span-contact-2"><img class="contact-icon" src="assets/icon/icon_phone.svg" alt="Phone Icon">Tel: 0162 666 82 75</span>
     </div>
-         
+
 </form>
+
+<div id="mailSend" class="mailSend" [ngClass]="{'d-none': isAktiv}" (click)="closeMail()">
+    <p>Ihre Mail wurde gesendet</p>
+</div>
