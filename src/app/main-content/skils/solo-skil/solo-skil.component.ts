@@ -32,7 +32,7 @@ export class SoloSkilComponent {
     },
     {
     image: 'assets/skills-icon/group.svg',
-    title: 'Material Disign'
+    title: 'Material Design'
     },
     {
       image: 'assets/skills-icon/scrum.svg',

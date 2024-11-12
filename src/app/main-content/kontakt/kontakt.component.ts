@@ -40,11 +40,10 @@ export class KontaktComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest && this.isClicked) {
+    if (ngForm.submitted && ngForm.form.valid && this.isClicked) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            // Platz um zu erweitern der Funktionen
             ngForm.resetForm();
           },
           error: (error) => {
